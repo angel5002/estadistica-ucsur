@@ -237,17 +237,24 @@ function buildPost(item, tipo) {
         <div class="post-exercise-label">${label}</div>
       </div>
     </div>
-    <div class="post-body">
-      <div class="post-enunciado">${item.enunciado}</div>`;
+    <div class="post-body">`;
 
-  // Enunciado images (parte del enunciado, antes de la respuesta)
-  if (item.imagenesEnunciado && item.imagenesEnunciado.length > 0) {
-    inner += `<div class="post-images post-images-enunciado">`;
+  // Contexto (texto antes de la imagen) — usa 'contexto' si existe, si no 'enunciado'
+  const contexto = item.contexto || item.enunciado || '';
+  const preguntas = item.preguntas || '';
+  const hasEnunciadoImages = item.imagenesEnunciado && item.imagenesEnunciado.length > 0;
+
+  if (contexto) inner += `<div class="post-enunciado">${contexto}</div>`;
+
+  if (hasEnunciadoImages) {
+    inner += `<div class="post-images">`;
     item.imagenesEnunciado.forEach(src => {
       inner += `<img class="post-image" src="${src}" alt="Imagen del enunciado" loading="lazy" onerror="this.style.display='none'">`;
     });
     inner += `</div>`;
   }
+
+  if (preguntas) inner += `<div class="post-enunciado post-preguntas">${preguntas}</div>`;
 
   inner += `<div class="post-desarrollo">${item.desarrollo}</div>`;
 
@@ -478,11 +485,11 @@ const FALLBACK_SEMANAS = [
     numero:2, titulo:'Semana 2',
     descripcion:'Distribución de frecuencias, tablas estadísticas y análisis de datos agrupados e intervalos.',
     cuestionario:[
-      { estudianteId:1, numero:1, enunciado:'Se ha observado la variable X = "Saldo (en Euros)" de 400 cuentas corrientes de clientes con edades comprendidas entre 18 y 25 años. El siguiente gráfico recoge la distribución de porcentajes acumulados de esta variable.\n\nIndique el número de cuentas con un saldo de:\na) Menor de 110 Euros.\nb) Mínimo 90 Euros.', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-1.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-1.jpeg'], tabla:null, grafico:null },
-      { estudianteId:2, numero:2, enunciado:'La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).\n\n¿Qué porcentaje de los afiliados tienen ingresos entre 151 mil y 349 mil soles?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-2.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-2.jpeg'], tabla:null, grafico:null },
-      { estudianteId:3, numero:3, enunciado:'Los ingresos mensuales (en miles de dólares) que lograron 40 empresas de la ciudad de Lima se resumen en la siguiente tabla de frecuencias con 6 intervalos de amplitud constante:\n\n¿Qué porcentaje de empresas tuvieron ingresos de por lo menos 40 000 dólares?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-3.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-3.jpeg'], tabla:{ encabezados:['[Intervalos de ingresos]','xᵢ','fᵢ','Fᵢ','hᵢ','Hᵢ'], filas:[['','15','','','0.10',''],['','','','','0.20','0.45'],['','45','12','','',''],['','','2','','','0.95'],['Total','---','40','','','']] }, grafico:null },
-      { estudianteId:4, numero:4, enunciado:'El número de operaciones bancarias virtuales que realizan 50 clientes de un banco durante una semana viene dado por la siguiente serie:\n\n¿Cuántos clientes realizan máximo 3 operaciones?\n¿Qué porcentaje de los clientes realizan menos de 3 operaciones?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-4.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-4.jpeg'], tabla:null, grafico:null },
-      { estudianteId:5, numero:5, enunciado:'La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).\n\n¿Calcule la amplitud y la cantidad de intervalos?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-5.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-5.jpeg'], tabla:null, grafico:null },
+      { estudianteId:1, numero:1, contexto:'Se ha observado la variable X = "Saldo (en Euros)" de 400 cuentas corrientes de clientes con edades comprendidas entre 18 y 25 años. El siguiente gráfico recoge la distribución de porcentajes acumulados de esta variable.', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-1.jpeg'], preguntas:'Indique el número de cuentas con un saldo de:\na) Menor de 110 Euros.\nb) Mínimo 90 Euros.', desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-1.jpeg'], tabla:null, grafico:null },
+      { estudianteId:2, numero:2, contexto:'La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-2.jpeg'], preguntas:'¿Qué porcentaje de los afiliados tienen ingresos entre 151 mil y 349 mil soles?', desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-2.jpeg'], tabla:null, grafico:null },
+      { estudianteId:3, numero:3, contexto:'Los ingresos mensuales (en miles de dólares) que lograron 40 empresas de la ciudad de Lima se resumen en la siguiente tabla de frecuencias con 6 intervalos de amplitud constante:', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-3.jpeg'], preguntas:'¿Qué porcentaje de empresas tuvieron ingresos de por lo menos 40 000 dólares?', desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-3.jpeg'], tabla:null, grafico:null },
+      { estudianteId:4, numero:4, contexto:'El número de operaciones bancarias virtuales que realizan 50 clientes de un banco durante una semana viene dado por la siguiente serie:', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-4.jpeg'], preguntas:'¿Cuántos clientes realizan máximo 3 operaciones?\n¿Qué porcentaje de los clientes realizan menos de 3 operaciones?', desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-4.jpeg'], tabla:null, grafico:null },
+      { estudianteId:5, numero:5, contexto:'La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-5.jpeg'], preguntas:'¿Calcule la amplitud y la cantidad de intervalos?', desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-5.jpeg'], tabla:null, grafico:null },
     ],
     ficha:[],
   },
