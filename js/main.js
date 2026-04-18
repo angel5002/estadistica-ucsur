@@ -394,6 +394,27 @@ function initNavButtons() {
   document.getElementById('btn-next').addEventListener('click', () => {
     if (currentSemanaNumero < semanasData.length) showSemana(currentSemanaNumero + 1);
   });
+
+  // Logo → siempre va al inicio
+  document.getElementById('nav-logo-btn').addEventListener('click', () => {
+    if (currentSemanaNumero !== null) {
+      exitSemanaMode();
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+
+  // Equipo → si hay semana activa, sale primero y luego scrollea a equipo
+  document.getElementById('nav-equipo-btn').addEventListener('click', () => {
+    if (currentSemanaNumero !== null) {
+      exitSemanaMode();
+      setTimeout(() => {
+        document.getElementById('equipo').scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+    } else {
+      document.getElementById('equipo').scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 }
 
 /* ============================================================

@@ -154,6 +154,10 @@ h1, h2, h3, h4 {
   font-weight: 500;
   color: var(--near-black);
   white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .nav-actions {
