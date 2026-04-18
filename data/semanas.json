@@ -7,36 +7,45 @@
       {
         "estudianteId": 1,
         "numero": 1,
-        "enunciado": "¿Qué es la estadística y cuál es su importancia en la toma de decisiones?",
-        "desarrollo": "La estadística es la ciencia que se ocupa de recopilar, organizar, analizar e interpretar datos con el fin de tomar decisiones informadas. Su importancia radica en que permite transformar grandes volúmenes de información en conocimiento útil, reduciendo la incertidumbre y fundamentando las decisiones en evidencia objetiva.",
-        "imagenes": [],
+        "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Tiempo de vida útil de un foco con filamento nuevo.",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-1.jpg"],
         "tabla": null,
         "grafico": null
       },
       {
         "estudianteId": 2,
         "numero": 2,
-        "enunciado": "Clasifica los siguientes datos según el tipo de variable: edad, género, temperatura, nivel de satisfacción (escala 1-5), número de hijos.",
-        "desarrollo": "Analizando cada variable:\n- Edad: variable cuantitativa continua\n- Género: variable cualitativa nominal\n- Temperatura: variable cuantitativa continua\n- Nivel de satisfacción (1-5): variable cualitativa ordinal\n- Número de hijos: variable cuantitativa discreta",
-        "imagenes": [],
-        "tabla": {
-          "encabezados": ["Variable", "Tipo", "Subtipo"],
-          "filas": [
-            ["Edad", "Cuantitativa", "Continua"],
-            ["Género", "Cualitativa", "Nominal"],
-            ["Temperatura", "Cuantitativa", "Continua"],
-            ["Nivel de satisfacción", "Cualitativa", "Ordinal"],
-            ["Número de hijos", "Cuantitativa", "Discreta"]
-          ]
-        },
+        "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Calidad del servicio de atención: Excelente ( ) Bueno ( ) Regular ( ) Deficiente ( )",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-2.jpg"],
+        "tabla": null,
         "grafico": null
       },
       {
         "estudianteId": 3,
         "numero": 3,
-        "enunciado": "Diferencia entre estadística descriptiva e inferencial con un ejemplo.",
-        "desarrollo": "La estadística descriptiva resume y describe las características de un conjunto de datos, por ejemplo: calcular el promedio de notas de un salón. La estadística inferencial, en cambio, usa una muestra para hacer afirmaciones sobre una población mayor; por ejemplo: estimar el promedio nacional de notas de estudiantes universitarios a partir de una muestra de 200 universidades.",
-        "imagenes": [],
+        "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Número de DNI.",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-3.jpg"],
+        "tabla": null,
+        "grafico": null
+      },
+      {
+        "estudianteId": 4,
+        "numero": 4,
+        "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Niveles de estrés (leve, moderado, severo).",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-4.jpg"],
+        "tabla": null,
+        "grafico": null
+      },
+      {
+        "estudianteId": 5,
+        "numero": 5,
+        "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Ingreso mensual por la venta de las acciones durante un mes.",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-5.jpg"],
         "tabla": null,
         "grafico": null
       }
