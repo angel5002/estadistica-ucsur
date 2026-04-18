@@ -9,7 +9,7 @@
         "numero": 1,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Tiempo de vida útil de un foco con filamento nuevo.",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-1.jpg"],
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-1.jpeg"],
         "tabla": null,
         "grafico": null
       },
@@ -18,7 +18,7 @@
         "numero": 2,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Calidad del servicio de atención: Excelente ( ) Bueno ( ) Regular ( ) Deficiente ( )",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-2.jpg"],
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-2.jpeg"],
         "tabla": null,
         "grafico": null
       },
@@ -27,7 +27,7 @@
         "numero": 3,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Número de DNI.",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-3.jpg"],
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-3.jpeg"],
         "tabla": null,
         "grafico": null
       },
@@ -36,7 +36,7 @@
         "numero": 4,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Niveles de estrés (leve, moderado, severo).",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-4.jpg"],
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-4.jpeg"],
         "tabla": null,
         "grafico": null
       },
@@ -45,7 +45,7 @@
         "numero": 5,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Ingreso mensual por la venta de las acciones durante un mes.",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-5.jpg"],
+        "imagenes": ["imgs/semanas/semana01/cuestionario/respuesta-5.jpeg"],
         "tabla": null,
         "grafico": null
       }
