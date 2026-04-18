@@ -5,7 +5,7 @@
     "descripcion": "Introducción a la estadística descriptiva. Conceptos básicos, tipos de variables y primeras medidas de resumen.",
     "cuestionario": [
       {
-        "estudianteId": 1,
+        "estudianteId": 2,
         "numero": 1,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Tiempo de vida útil de un foco con filamento nuevo.",
         "desarrollo": "",
@@ -23,7 +23,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 3,
+        "estudianteId": 2,
         "numero": 3,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Número de DNI.",
         "desarrollo": "",
@@ -32,7 +32,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 4,
+        "estudianteId": 2,
         "numero": 4,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Niveles de estrés (leve, moderado, severo).",
         "desarrollo": "",
@@ -41,7 +41,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 5,
+        "estudianteId": 2,
         "numero": 5,
         "enunciado": "Clasifique la variable de acuerdo a su naturaleza y su medición: Ingreso mensual por la venta de las acciones durante un mes.",
         "desarrollo": "",
@@ -52,7 +52,7 @@
     ],
     "ficha": [
       {
-        "estudianteId": 1,
+        "estudianteId": 4,
         "numero": 1,
         "enunciado": "Complete los espacios en blanco con el concepto estadístico correcto.\n\na. La _____________ es el conjunto total de elementos o individuos que poseen una característica común y que son objeto de estudio.\nb. Una _____________ es un subconjunto de la población que se selecciona para realizar el análisis.\nc. La _____________ es la rama de la estadística que se encarga de recolectar, organizar, resumir y presentar datos mediante tablas y gráficos.\nd. La _____________ utiliza datos de una muestra para hacer generalizaciones o inferencias sobre una población.\ne. El elemento individual que forma parte de la población se denomina _____________.",
         "desarrollo": "",
@@ -61,7 +61,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 2,
+        "estudianteId": 4,
         "numero": 2,
         "enunciado": "Indique si cada afirmación corresponde a población, muestra o unidad de análisis.\n\na. Los 2 000 estudiantes matriculados en una universidad privada de Lima. ( )\nb. 120 estudiantes seleccionados para participar en una encuesta sobre hábitos de estudio. ( )\nc. Cada estudiante que responde el cuestionario aplicado en el estudio. ( )\nd. Todos los clientes que compran en un supermercado durante un mes. ( )\ne. 80 clientes elegidos aleatoriamente para evaluar el nivel de satisfacción. ( )",
         "desarrollo": "",
@@ -70,7 +70,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 3,
+        "estudianteId": 4,
         "numero": 3,
         "enunciado": "Indique el tipo de variable usando la clasificación según su naturaleza y escala de medición:",
         "desarrollo": "",
@@ -110,7 +110,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 5,
+        "estudianteId": 4,
         "numero": 5,
         "enunciado": "Una consultora realiza una encuesta a una muestra aleatoria de 176 universitarios limeños que han recibido al menos una tutoría durante el ciclo 2023-2. Algunos de los resultados del estudio fueron:\n• El 47% de los estudiantes utiliza los servicios de tutoría grupales; el 22%, los servicios de tutoría individuales; y el 31%, ambos tipos de tutorías.\n• Los estudiantes realizaron un promedio de 4 tutorías grupales durante el ciclo 2023-1.\n• El 33% de los estudiantes ha calificado como \"muy bueno\" los servicios de tutoría individual; el 32%, como \"bueno\"; el 20%, como \"regular\"; y el resto, como \"malo\".\n• Los estudiantes que han contratado los servicios de tutorías individuales han pagado un promedio de 37 soles por hora.\n\nEn base a la información proporcionada, complete:\nLa población de estudio es: ___________\nLa muestra es: ___________\nLa unidad elemental es: ___________\nIdentifique una variable cuantitativa continua: ___________\nIdentifique una variable cuantitativa discreta: ___________\nIdentifique una variable cualitativa nominal: ___________\nIdentifique una variable cualitativa ordinal: ___________\nUn ejemplo de estadístico es: ___________",
         "desarrollo": "",
@@ -119,7 +119,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 6,
+        "estudianteId": 4,
         "numero": 6,
         "enunciado": "Una universidad del departamento de Piura desea analizar el uso de plataformas de aprendizaje virtual entre sus estudiantes de primer ciclo. Para ello, durante el semestre académico se realizó una encuesta a 120 estudiantes seleccionados aleatoriamente de un total de 850 estudiantes matriculados en primer ciclo. Los principales resultados del estudio fueron los siguientes:\n• El 55% de los estudiantes encuestados son mujeres y el 45% hombres.\n• La edad promedio de los estudiantes es 19.8 años.\n• Los estudiantes utilizan en promedio 3.6 horas semanales las plataformas virtuales.\n• El nivel de satisfacción con la plataforma virtual fue calificado como: 40% Muy satisfecho, 35% Satisfecho, 15% Regular y 10% Insatisfecho.\n• El número promedio de cursos virtuales matriculados es 4 cursos por semestre.\n\na. Identifique los elementos del estudio:\nPoblación: ___________\nMuestra: ___________\nUnidad elemental: ___________\n\nb. Clasifique las variables del estudio:",
         "desarrollo": "",
@@ -137,7 +137,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 1,
+        "estudianteId": 4,
         "numero": 7,
         "enunciado": "Una empresa de alimentos está realizando un estudio de mercado sobre las preferencias de consumo de cereales entre adultos jóvenes en el distrito de Lurín. Se encuestaron a 900 personas de 18 a 30 años, obteniendo los siguientes resultados:\n• El 60% prefiere cereales sin azúcar añadida, el 30% prefiere los cereales con poca azúcar y el 10% los prefieren muy dulces.\n• El 20% de los consumidores compra cereales integrales, el 50% compran cereales comunes y el 30% cereales con sabor a chocolate.\n• La edad promedio de los consumidores es de 27 años.\n• El 40% de los consumidores compra cereales en supermercados, el 30% en tiendas de conveniencia y el resto en mercados locales.\n• El 20% de los consumidores son solteros y el resto son casados.\n\na. Identifique los elementos del estudio:\nPoblación: ___________\nMuestra: ___________\nUnidad elemental: ___________\n\nb. Clasifique las variables del estudio:",
         "desarrollo": "",
@@ -162,7 +162,7 @@
     "descripcion": "Distribución de frecuencias, tablas estadísticas y análisis de datos agrupados e intervalos.",
     "cuestionario": [
       {
-        "estudianteId": 1,
+        "estudianteId": 2,
         "numero": 1,
         "contexto": "Se ha observado la variable X = \"Saldo (en Euros)\" de 400 cuentas corrientes de clientes con edades comprendidas entre 18 y 25 años. El siguiente gráfico recoge la distribución de porcentajes acumulados de esta variable.",
         "imagenesEnunciado": ["imgs/semanas/semana02/cuestionario/enunciados/enunciado-1.jpeg"],
@@ -184,7 +184,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 3,
+        "estudianteId": 2,
         "numero": 3,
         "contexto": "Los ingresos mensuales (en miles de dólares) que lograron 40 empresas de la ciudad de Lima se resumen en la siguiente tabla de frecuencias con 6 intervalos de amplitud constante:",
         "imagenesEnunciado": ["imgs/semanas/semana02/cuestionario/enunciados/enunciado-3.jpeg"],
@@ -195,7 +195,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 4,
+        "estudianteId": 2,
         "numero": 4,
         "contexto": "El número de operaciones bancarias virtuales que realizan 50 clientes de un banco durante una semana viene dado por la siguiente serie:",
         "imagenesEnunciado": ["imgs/semanas/semana02/cuestionario/enunciados/enunciado-4.jpeg"],
@@ -206,7 +206,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 5,
+        "estudianteId": 2,
         "numero": 5,
         "contexto": "La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).",
         "imagenesEnunciado": ["imgs/semanas/semana02/cuestionario/enunciados/enunciado-5.jpeg"],
@@ -219,7 +219,7 @@
     ],
     "ficha": [
       {
-        "estudianteId": 1,
+        "estudianteId": 5,
         "numero": 1,
         "contexto": "Se realizó un estudio a 40 personas que visitan frecuentemente el centro histórico de Lima para conocer su estado civil. Los resultados obtenidos fueron los siguientes (C=Casado, S=Soltero, V=Viudo, D=Divorciado):",
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-1.jpeg"],
@@ -230,7 +230,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 2,
+        "estudianteId": 5,
         "numero": 2,
         "contexto": "A continuación, se muestra el registro del número de cursos que llevan los estudiantes que trabajan durante el ciclo 2023-2:",
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-2.jpeg"],
@@ -241,7 +241,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 3,
+        "estudianteId": 5,
         "numero": 3,
         "contexto": "Complete la siguiente distribución de frecuencias:",
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-3.jpeg"],
@@ -252,7 +252,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 4,
+        "estudianteId": 5,
         "numero": 4,
         "contexto": "Los siguientes datos son las remuneraciones mensuales de 40 operadores de call center que incluye su sueldo básico y sus comisiones:",
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-4.jpeg"],
@@ -274,7 +274,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 6,
+        "estudianteId": 5,
         "numero": 6,
         "contexto": "En el centro de salud mental comunitario ubicado en la zona de Bayóvar, se está ejecutando el Proyecto \"Bienestar Emocional\", cuyo objetivo es evaluar los niveles de ansiedad autoevaluada en una muestra de 20 adolescentes, utilizando una escala estandarizada que va de 0 a 30. Los puntajes obtenidos son los siguientes:",
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-6.jpeg"],
@@ -285,7 +285,7 @@
         "grafico": null
       },
       {
-        "estudianteId": 1,
+        "estudianteId": 5,
         "numero": 7,
         "enunciado": "Utilizando el SPSS:\na. Elaborar una tabla de frecuencias y su gráfico respectivo de los datos de las preguntas 1 y 2.\nb. Elaborar una tabla de frecuencias con intervalos y su gráfico respectivo de los datos de las preguntas 4, 5 y 6.",
         "desarrollo": "",
