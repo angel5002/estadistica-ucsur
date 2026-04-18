@@ -241,6 +241,11 @@ function buildPost(item, tipo) {
       <div class="post-enunciado">${item.enunciado}</div>
       <div class="post-desarrollo">${item.desarrollo}</div>`;
 
+  // Table (before images)
+  if (item.tabla) {
+    inner += buildTable(item.tabla);
+  }
+
   // Images
   if (item.imagenes && item.imagenes.length > 0) {
     inner += `<div class="post-images">`;
@@ -248,11 +253,6 @@ function buildPost(item, tipo) {
       inner += `<img class="post-image" src="${src}" alt="Resolución" loading="lazy" onerror="this.style.display='none'">`;
     });
     inner += `</div>`;
-  }
-
-  // Table
-  if (item.tabla) {
-    inner += buildTable(item.tabla);
   }
 
   // Chart placeholder (canvas rendered later)
