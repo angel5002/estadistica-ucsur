@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadística General — UCSUR</title>
+  <link rel="icon" type="image/png" href="imgs/cientifica_logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Estadística General</a>
+      <div class="nav-actions">
+        <div class="nav-dropdown" id="semanas-dropdown">
+          <button class="nav-dropdown-btn" id="semanas-btn" aria-expanded="false">
+            Semanas
+            <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="dropdown-panel" id="dropdown-panel" aria-hidden="true">
+            <ul class="dropdown-list" id="dropdown-list"></ul>
+          </div>
+        </div>
+        <a href="#equipo" class="nav-link">Equipo</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container hero-container">
+      <span class="overline">Universidad Científica del Sur — 2025</span>
+      <h1 class="hero-title">Estadística<br>General</h1>
+      <p class="hero-subtitle">Un espacio colaborativo donde documentamos nuestro aprendizaje semana a semana. Explora los cuestionarios, fichas de ejercicios y las contribuciones de cada integrante del grupo.</p>
+      <div class="hero-cta">
+        <a href="#equipo" class="btn btn-terracotta">Conoce al equipo</a>
+        <button class="btn btn-sand" id="hero-semanas-btn">Ver semanas ↓</button>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Desplázate para conocer al equipo</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section id="equipo" class="section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline">Quiénes somos</span>
+        <h2 class="section-title">Nuestro Equipo</h2>
+        <p class="section-desc">Somos seis estudiantes comprometidos con aprender y compartir el conocimiento estadístico semana a semana.</p>
+      </div>
+      <div id="students-container" class="students-container"></div>
+    </div>
+  </section>
+
+  <!-- WEEK CONTENT SECTION -->
+  <section id="semana-section" class="section-dark hidden">
+    <div class="container">
+      <div id="semana-header" class="semana-header"></div>
+
+      <div class="content-blocks" id="content-blocks">
+        <!-- CUESTIONARIO -->
+        <div class="content-block" id="cuestionario-block">
+          <div class="block-header">
+            <span class="block-badge badge-orange">Evaluación</span>
+            <h3 class="block-title">Cuestionario</h3>
+          </div>
+          <div id="cuestionario-posts" class="posts-container"></div>
+        </div>
+
+        <!-- FICHA DE EJERCICIOS -->
+        <div class="content-block" id="ficha-block">
+          <div class="block-header">
+            <span class="block-badge badge-stone">Práctica</span>
+            <h3 class="block-title">Ficha de Ejercicios</h3>
+          </div>
+          <div id="ficha-posts" class="posts-container"></div>
+        </div>
+      </div>
+
+      <div class="semana-empty hidden" id="semana-empty">
+        <p>El contenido de esta semana aún no ha sido cargado.</p>
+      </div>
+
+      <div class="semana-nav-footer" id="semana-nav-footer">
+        <button class="btn btn-sand" id="btn-prev">← Semana anterior</button>
+        <button class="btn btn-terracotta" id="btn-home">Inicio</button>
+        <button class="btn btn-sand" id="btn-next">Semana siguiente →</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

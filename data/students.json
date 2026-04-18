@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana García",
+    "foto": "imgs/profiles/estudiante-1.svg",
+    "bio": "Estudiante apasionada por el análisis de datos y la toma de decisiones basada en evidencia. Encuentra en la estadística una herramienta clave para entender el mundo que nos rodea."
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Mendoza",
+    "foto": "imgs/profiles/estudiante-2.svg",
+    "bio": "Curioso por naturaleza, disfruta resolver problemas aplicando métodos estadísticos. Cree que detrás de cada dato hay una historia esperando ser contada."
+  },
+  {
+    "id": 3,
+    "nombre": "Lucía Torres",
+    "foto": "imgs/profiles/estudiante-3.svg",
+    "bio": "Le apasiona la intersección entre la estadística y las ciencias sociales. Busca convertir los números en narrativas comprensibles para todos."
+  },
+  {
+    "id": 4,
+    "nombre": "Diego Ramírez",
+    "foto": "imgs/profiles/estudiante-4.svg",
+    "bio": "Orientado al detalle y al rigor metodológico. Para él, la estadística es el lenguaje preciso con el que la realidad puede ser descrita y cuestionada."
+  },
+  {
+    "id": 5,
+    "nombre": "Sofía Vargas",
+    "foto": "imgs/profiles/estudiante-5.svg",
+    "bio": "Comprometida con aprender y compartir conocimiento. Valora el trabajo en equipo y la diversidad de perspectivas que cada compañero aporta al grupo."
+  },
+  {
+    "id": 6,
+    "nombre": "Mateo Flores",
+    "foto": "imgs/profiles/estudiante-6.svg",
+    "bio": "Estudiante con interés en la estadística aplicada a los negocios. Usa los datos como puente entre la teoría académica y las decisiones del mundo real."
+  }
+]

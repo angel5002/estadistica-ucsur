@@ -1,0 +1,125 @@
+[
+  {
+    "numero": 1,
+    "titulo": "Semana 1",
+    "descripcion": "Introducción a la estadística descriptiva. Conceptos básicos, tipos de variables y primeras medidas de resumen.",
+    "cuestionario": [
+      {
+        "estudianteId": 1,
+        "numero": 1,
+        "enunciado": "¿Qué es la estadística y cuál es su importancia en la toma de decisiones?",
+        "desarrollo": "La estadística es la ciencia que se ocupa de recopilar, organizar, analizar e interpretar datos con el fin de tomar decisiones informadas. Su importancia radica en que permite transformar grandes volúmenes de información en conocimiento útil, reduciendo la incertidumbre y fundamentando las decisiones en evidencia objetiva.",
+        "imagenes": [],
+        "tabla": null,
+        "grafico": null
+      },
+      {
+        "estudianteId": 2,
+        "numero": 2,
+        "enunciado": "Clasifica los siguientes datos según el tipo de variable: edad, género, temperatura, nivel de satisfacción (escala 1-5), número de hijos.",
+        "desarrollo": "Analizando cada variable:\n- Edad: variable cuantitativa continua\n- Género: variable cualitativa nominal\n- Temperatura: variable cuantitativa continua\n- Nivel de satisfacción (1-5): variable cualitativa ordinal\n- Número de hijos: variable cuantitativa discreta",
+        "imagenes": [],
+        "tabla": {
+          "encabezados": ["Variable", "Tipo", "Subtipo"],
+          "filas": [
+            ["Edad", "Cuantitativa", "Continua"],
+            ["Género", "Cualitativa", "Nominal"],
+            ["Temperatura", "Cuantitativa", "Continua"],
+            ["Nivel de satisfacción", "Cualitativa", "Ordinal"],
+            ["Número de hijos", "Cuantitativa", "Discreta"]
+          ]
+        },
+        "grafico": null
+      },
+      {
+        "estudianteId": 3,
+        "numero": 3,
+        "enunciado": "Diferencia entre estadística descriptiva e inferencial con un ejemplo.",
+        "desarrollo": "La estadística descriptiva resume y describe las características de un conjunto de datos, por ejemplo: calcular el promedio de notas de un salón. La estadística inferencial, en cambio, usa una muestra para hacer afirmaciones sobre una población mayor; por ejemplo: estimar el promedio nacional de notas de estudiantes universitarios a partir de una muestra de 200 universidades.",
+        "imagenes": [],
+        "tabla": null,
+        "grafico": null
+      }
+    ],
+    "ficha": [
+      {
+        "estudianteId": 4,
+        "numero": 1,
+        "enunciado": "Se encuestaron 30 estudiantes sobre el número de horas de estudio diarias. Los datos obtenidos fueron: 2, 3, 4, 2, 5, 3, 4, 2, 3, 4, 5, 6, 3, 2, 4, 3, 5, 4, 2, 3, 6, 4, 3, 5, 2, 4, 3, 4, 5, 3. Construye la tabla de distribución de frecuencias.",
+        "desarrollo": "Para construir la tabla de distribución de frecuencias, primero ordeno los datos y cuento las repeticiones de cada valor. Obtenemos los siguientes resultados:",
+        "imagenes": [],
+        "tabla": {
+          "encabezados": ["Horas (Xi)", "Frecuencia Abs. (fi)", "Frecuencia Rel. (hi)", "Frec. Abs. Acum. (Fi)", "Frec. Rel. Acum. (Hi)"],
+          "filas": [
+            ["2", "5", "0.167", "5", "0.167"],
+            ["3", "9", "0.300", "14", "0.467"],
+            ["4", "8", "0.267", "22", "0.733"],
+            ["5", "5", "0.167", "27", "0.900"],
+            ["6", "3", "0.100", "30", "1.000"],
+            ["Total", "30", "1.000", "—", "—"]
+          ]
+        },
+        "grafico": {
+          "tipo": "bar",
+          "titulo": "Distribución de horas de estudio diarias",
+          "labels": ["2 hrs", "3 hrs", "4 hrs", "5 hrs", "6 hrs"],
+          "datasets": [
+            {
+              "label": "Frecuencia absoluta",
+              "data": [5, 9, 8, 5, 3],
+              "backgroundColor": "rgba(201, 100, 66, 0.75)",
+              "borderColor": "#c96442",
+              "borderWidth": 1
+            }
+          ]
+        }
+      },
+      {
+        "estudianteId": 5,
+        "numero": 2,
+        "enunciado": "A partir de los datos de la ficha anterior, calcula e interpreta la moda, la mediana y la media aritmética.",
+        "desarrollo": "Trabajando con los 30 datos de horas de estudio:\n\n**Media aritmética (x̄):** Suma de todos los valores dividida entre el total.\nx̄ = (2×5 + 3×9 + 4×8 + 5×5 + 6×3) / 30 = (10+27+32+25+18) / 30 = 112/30 ≈ 3.73 horas\n\n**Mediana (Me):** El valor central al ordenar los datos (n=30, posición 15 y 16).\nLos datos ordenados: posición 15 y 16 → ambos son 4.\nMe = 4 horas\n\n**Moda (Mo):** El valor que más se repite.\nMo = 3 horas (aparece 9 veces)\n\n**Interpretación:** En promedio los estudiantes estudian 3.73 horas diarias, el valor más común es 3 horas y el 50% estudia 4 horas o menos.",
+        "imagenes": [],
+        "tabla": null,
+        "grafico": null
+      },
+      {
+        "estudianteId": 6,
+        "numero": 3,
+        "enunciado": "Grafica el histograma de frecuencias relativas para los datos de horas de estudio.",
+        "desarrollo": "Para el histograma de frecuencias relativas, utilizamos los valores calculados en la tabla de distribución. Las frecuencias relativas (hi) representan la proporción de cada valor respecto al total de observaciones. El histograma nos permite visualizar la distribución de los datos y observar que la mayor concentración se encuentra en 3-4 horas de estudio diario.",
+        "imagenes": [],
+        "tabla": null,
+        "grafico": {
+          "tipo": "bar",
+          "titulo": "Histograma de Frecuencias Relativas",
+          "labels": ["2 hrs", "3 hrs", "4 hrs", "5 hrs", "6 hrs"],
+          "datasets": [
+            {
+              "label": "Frecuencia relativa (hi)",
+              "data": [0.167, 0.300, 0.267, 0.167, 0.100],
+              "backgroundColor": "rgba(93, 92, 88, 0.75)",
+              "borderColor": "#5e5d59",
+              "borderWidth": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  { "numero": 2, "titulo": "Semana 2", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 3, "titulo": "Semana 3", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 4, "titulo": "Semana 4", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 5, "titulo": "Semana 5", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 6, "titulo": "Semana 6", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 7, "titulo": "Semana 7", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 8, "titulo": "Semana 8", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 9, "titulo": "Semana 9", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 10, "titulo": "Semana 10", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 11, "titulo": "Semana 11", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 12, "titulo": "Semana 12", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 13, "titulo": "Semana 13", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 14, "titulo": "Semana 14", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 15, "titulo": "Semana 15", "descripcion": "", "cuestionario": [], "ficha": [] },
+  { "numero": 16, "titulo": "Semana 16", "descripcion": "", "cuestionario": [], "ficha": [] }
+]
