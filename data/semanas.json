@@ -127,11 +127,11 @@
         "tabla": {
           "encabezados": ["Variable", "Según naturaleza", "Escala de medición"],
           "filas": [
-            ["Sexo", "", ""],
-            ["Edad", "", ""],
-            ["Horas semanales de uso de plataformas virtuales", "", ""],
-            ["Nivel de satisfacción con la plataforma", "", ""],
-            ["Número de cursos virtuales matriculados", "", ""]
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""]
           ]
         },
         "grafico": null
@@ -145,11 +145,11 @@
         "tabla": {
           "encabezados": ["Variable", "Según naturaleza", "Escala de medición"],
           "filas": [
-            ["Preferencia de dulzor en cereales", "", ""],
-            ["Tipo de cereal preferido", "", ""],
-            ["Edad del consumidor", "", ""],
-            ["Lugar de compra de cereales", "", ""],
-            ["Estado civil", "", ""]
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""]
           ]
         },
         "grafico": null
