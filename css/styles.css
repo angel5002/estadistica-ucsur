@@ -639,6 +639,23 @@ h1, h2, h3, h4 {
   box-shadow: rgba(0,0,0,0.35) 0px 16px 48px;
 }
 
+/* Enunciado images label */
+.post-images-enunciado {
+  position: relative;
+}
+
+.post-images-enunciado::before {
+  content: 'Enunciado';
+  display: block;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--stone-gray);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
 /* Tables */
 .post-table-wrap {
   margin-top: 20px;

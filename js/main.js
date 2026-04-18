@@ -238,15 +238,25 @@ function buildPost(item, tipo) {
       </div>
     </div>
     <div class="post-body">
-      <div class="post-enunciado">${item.enunciado}</div>
-      <div class="post-desarrollo">${item.desarrollo}</div>`;
+      <div class="post-enunciado">${item.enunciado}</div>`;
 
-  // Table (before images)
+  // Enunciado images (parte del enunciado, antes de la respuesta)
+  if (item.imagenesEnunciado && item.imagenesEnunciado.length > 0) {
+    inner += `<div class="post-images post-images-enunciado">`;
+    item.imagenesEnunciado.forEach(src => {
+      inner += `<img class="post-image" src="${src}" alt="Imagen del enunciado" loading="lazy" onerror="this.style.display='none'">`;
+    });
+    inner += `</div>`;
+  }
+
+  inner += `<div class="post-desarrollo">${item.desarrollo}</div>`;
+
+  // Table (before answer images)
   if (item.tabla) {
     inner += buildTable(item.tabla);
   }
 
-  // Images
+  // Answer images
   if (item.imagenes && item.imagenes.length > 0) {
     inner += `<div class="post-images">`;
     item.imagenes.forEach(src => {
@@ -464,5 +474,17 @@ const FALLBACK_SEMANAS = [
       { estudianteId:1, numero:7, enunciado:'Una empresa de alimentos está realizando un estudio de mercado sobre las preferencias de consumo de cereales entre adultos jóvenes en el distrito de Lurín. Se encuestaron a 900 personas de 18 a 30 años, obteniendo los siguientes resultados:\n• El 60% prefiere cereales sin azúcar añadida, el 30% prefiere los cereales con poca azúcar y el 10% los prefieren muy dulces.\n• El 20% de los consumidores compra cereales integrales, el 50% compran cereales comunes y el 30% cereales con sabor a chocolate.\n• La edad promedio de los consumidores es de 27 años.\n• El 40% de los consumidores compra cereales en supermercados, el 30% en tiendas de conveniencia y el resto en mercados locales.\n• El 20% de los consumidores son solteros y el resto son casados.\n\na. Identifique los elementos del estudio:\nPoblación: ___________\nMuestra: ___________\nUnidad elemental: ___________\n\nb. Clasifique las variables del estudio:', desarrollo:'', imagenes:['imgs/semanas/semana01/ficha/respuesta-7.jpeg'], tabla:{ encabezados:['Variable','Según naturaleza','Escala de medición'], filas:[['','',''],['','',''],['','',''],['','',''],['','','']] }, grafico:null },
     ],
   },
-  ...[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16].map(n => ({ numero:n, titulo:`Semana ${n}`, descripcion:'', cuestionario:[], ficha:[] })),
+  {
+    numero:2, titulo:'Semana 2',
+    descripcion:'Distribución de frecuencias, tablas estadísticas y análisis de datos agrupados e intervalos.',
+    cuestionario:[
+      { estudianteId:1, numero:1, enunciado:'Se ha observado la variable X = "Saldo (en Euros)" de 400 cuentas corrientes de clientes con edades comprendidas entre 18 y 25 años. El siguiente gráfico recoge la distribución de porcentajes acumulados de esta variable.\n\nIndique el número de cuentas con un saldo de:\na) Menor de 110 Euros.\nb) Mínimo 90 Euros.', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-1.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-1.jpeg'], tabla:null, grafico:null },
+      { estudianteId:2, numero:2, enunciado:'La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).\n\n¿Qué porcentaje de los afiliados tienen ingresos entre 151 mil y 349 mil soles?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-2.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-2.jpeg'], tabla:null, grafico:null },
+      { estudianteId:3, numero:3, enunciado:'Los ingresos mensuales (en miles de dólares) que lograron 40 empresas de la ciudad de Lima se resumen en la siguiente tabla de frecuencias con 6 intervalos de amplitud constante:\n\n¿Qué porcentaje de empresas tuvieron ingresos de por lo menos 40 000 dólares?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-3.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-3.jpeg'], tabla:{ encabezados:['[Intervalos de ingresos]','xᵢ','fᵢ','Fᵢ','hᵢ','Hᵢ'], filas:[['','15','','','0.10',''],['','','','','0.20','0.45'],['','45','12','','',''],['','','2','','','0.95'],['Total','---','40','','','']] }, grafico:null },
+      { estudianteId:4, numero:4, enunciado:'El número de operaciones bancarias virtuales que realizan 50 clientes de un banco durante una semana viene dado por la siguiente serie:\n\n¿Cuántos clientes realizan máximo 3 operaciones?\n¿Qué porcentaje de los clientes realizan menos de 3 operaciones?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-4.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-4.jpeg'], tabla:null, grafico:null },
+      { estudianteId:5, numero:5, enunciado:'La empresa de investigación de mercados Alpha Datum S. A. realizó un estudio para evaluar la caída de la Bolsa de Valores de Lima (BVL) en las Administradoras de Fondos de Pensiones (AFP). En este estudio, se tomó una muestra de 50 afiliados de entre 25 y 35 años seleccionados al azar en Lima y se registraron los datos referentes a sus ingresos mensuales (en cientos de soles).\n\n¿Calcule la amplitud y la cantidad de intervalos?', imagenesEnunciado:['imgs/semanas/semana02/enunciados/enunciado-5.jpeg'], desarrollo:'', imagenes:['imgs/semanas/semana02/cuestionario/respuesta-5.jpeg'], tabla:null, grafico:null },
+    ],
+    ficha:[],
+  },
+  ...[3,4,5,6,7,8,9,10,11,12,13,14,15,16].map(n => ({ numero:n, titulo:`Semana ${n}`, descripcion:'', cuestionario:[], ficha:[] })),
 ];
