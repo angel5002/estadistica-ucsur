@@ -52,67 +52,107 @@
     ],
     "ficha": [
       {
-        "estudianteId": 4,
+        "estudianteId": 1,
         "numero": 1,
-        "enunciado": "Se encuestaron 30 estudiantes sobre el número de horas de estudio diarias. Los datos obtenidos fueron: 2, 3, 4, 2, 5, 3, 4, 2, 3, 4, 5, 6, 3, 2, 4, 3, 5, 4, 2, 3, 6, 4, 3, 5, 2, 4, 3, 4, 5, 3. Construye la tabla de distribución de frecuencias.",
-        "desarrollo": "Para construir la tabla de distribución de frecuencias, primero ordeno los datos y cuento las repeticiones de cada valor. Obtenemos los siguientes resultados:",
-        "imagenes": [],
+        "enunciado": "Complete los espacios en blanco con el concepto estadístico correcto.\n\na. La _____________ es el conjunto total de elementos o individuos que poseen una característica común y que son objeto de estudio.\nb. Una _____________ es un subconjunto de la población que se selecciona para realizar el análisis.\nc. La _____________ es la rama de la estadística que se encarga de recolectar, organizar, resumir y presentar datos mediante tablas y gráficos.\nd. La _____________ utiliza datos de una muestra para hacer generalizaciones o inferencias sobre una población.\ne. El elemento individual que forma parte de la población se denomina _____________.",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-1.jpeg"],
+        "tabla": null,
+        "grafico": null
+      },
+      {
+        "estudianteId": 2,
+        "numero": 2,
+        "enunciado": "Indique si cada afirmación corresponde a población, muestra o unidad de análisis.\n\na. Los 2 000 estudiantes matriculados en una universidad privada de Lima. ( )\nb. 120 estudiantes seleccionados para participar en una encuesta sobre hábitos de estudio. ( )\nc. Cada estudiante que responde el cuestionario aplicado en el estudio. ( )\nd. Todos los clientes que compran en un supermercado durante un mes. ( )\ne. 80 clientes elegidos aleatoriamente para evaluar el nivel de satisfacción. ( )",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-2.jpeg"],
+        "tabla": null,
+        "grafico": null
+      },
+      {
+        "estudianteId": 3,
+        "numero": 3,
+        "enunciado": "Indique el tipo de variable usando la clasificación según su naturaleza y escala de medición:",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-3.jpeg"],
         "tabla": {
-          "encabezados": ["Horas (Xi)", "Frecuencia Abs. (fi)", "Frecuencia Rel. (hi)", "Frec. Abs. Acum. (Fi)", "Frec. Rel. Acum. (Hi)"],
+          "encabezados": ["Variable", "Tipo (Naturaleza)", "Escala de Medición"],
           "filas": [
-            ["2", "5", "0.167", "5", "0.167"],
-            ["3", "9", "0.300", "14", "0.467"],
-            ["4", "8", "0.267", "22", "0.733"],
-            ["5", "5", "0.167", "27", "0.900"],
-            ["6", "3", "0.100", "30", "1.000"],
-            ["Total", "30", "1.000", "—", "—"]
+            ["Peso", "", ""],
+            ["Rangos de peso: 1=Menos de 40kg, 2=De 40 a 60kg, 3=Más de 60kg", "", ""],
+            ["Sexo biológico: 1=Femenino, 2=Masculino", "", ""],
+            ["Código del carnet universitario", "", ""],
+            ["Calificación de un examen", "", ""],
+            ["Calificación de un examen: 1=Insuficiente, 2=Aceptable, 3=Sobresaliente", "", ""],
+            ["Admisión en UCI: 1=Si, 2=No", "", ""],
+            ["Transfusión sanguínea: 1=Recibió transfusión, 2=No recibió transfusión", "", ""],
+            ["Número de operaciones", "", ""],
+            ["Grupo sanguíneo: 1=A, 2=B, 3=AB, 4=O", "", ""],
+            ["Número de faltas en un partido de fútbol", "", ""],
+            ["Número de libros vendidos en Amazon", "", ""],
+            ["Tiempo que demora el delivery", "", ""],
+            ["Temperatura en °C del horno", "", ""],
+            ["Ruido en decibelios", "", ""],
+            ["Puntaje de satisfacción por un servicio de: 1, 2, 3, 4, 5", "", ""],
+            ["Condición de mayor de edad: Si / No", "", ""],
+            ["Edad en años", "", ""]
           ]
         },
-        "grafico": {
-          "tipo": "bar",
-          "titulo": "Distribución de horas de estudio diarias",
-          "labels": ["2 hrs", "3 hrs", "4 hrs", "5 hrs", "6 hrs"],
-          "datasets": [
-            {
-              "label": "Frecuencia absoluta",
-              "data": [5, 9, 8, 5, 3],
-              "backgroundColor": "rgba(201, 100, 66, 0.75)",
-              "borderColor": "#c96442",
-              "borderWidth": 1
-            }
-          ]
-        }
+        "grafico": null
+      },
+      {
+        "estudianteId": 4,
+        "numero": 4,
+        "enunciado": "Ante el desarrollo de nuevas infraestructuras portuarias en la zona, un instituto de investigación socioeconómica decide evaluar cómo ha cambiado la situación laboral de los residentes del distrito de Chancay. Se realiza una entrevista presencial a 420 ciudadanos residentes en el distrito, todos mayores de edad. En la entrevista se les pregunta: estado civil, ingreso económico mensual en soles, tipo de ocupación principal (independiente, dependiente, desempleado) y el número de horas semanales dedicadas al trabajo. A partir de los datos recolectados, el instituto concluye que el ingreso promedio del total de habitantes del distrito ha aumentado en un 15% respecto al año anterior.\n\nA partir del caso, identifica:\na. Población y Muestra.\nb. Unidad de análisis.\nc. Identifica todas las variables mencionadas en el texto.",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-4.jpeg"],
+        "tabla": null,
+        "grafico": null
       },
       {
         "estudianteId": 5,
-        "numero": 2,
-        "enunciado": "A partir de los datos de la ficha anterior, calcula e interpreta la moda, la mediana y la media aritmética.",
-        "desarrollo": "Trabajando con los 30 datos de horas de estudio:\n\n**Media aritmética (x̄):** Suma de todos los valores dividida entre el total.\nx̄ = (2×5 + 3×9 + 4×8 + 5×5 + 6×3) / 30 = (10+27+32+25+18) / 30 = 112/30 ≈ 3.73 horas\n\n**Mediana (Me):** El valor central al ordenar los datos (n=30, posición 15 y 16).\nLos datos ordenados: posición 15 y 16 → ambos son 4.\nMe = 4 horas\n\n**Moda (Mo):** El valor que más se repite.\nMo = 3 horas (aparece 9 veces)\n\n**Interpretación:** En promedio los estudiantes estudian 3.73 horas diarias, el valor más común es 3 horas y el 50% estudia 4 horas o menos.",
-        "imagenes": [],
+        "numero": 5,
+        "enunciado": "Una consultora realiza una encuesta a una muestra aleatoria de 176 universitarios limeños que han recibido al menos una tutoría durante el ciclo 2023-2. Algunos de los resultados del estudio fueron:\n• El 47% de los estudiantes utiliza los servicios de tutoría grupales; el 22%, los servicios de tutoría individuales; y el 31%, ambos tipos de tutorías.\n• Los estudiantes realizaron un promedio de 4 tutorías grupales durante el ciclo 2023-1.\n• El 33% de los estudiantes ha calificado como \"muy bueno\" los servicios de tutoría individual; el 32%, como \"bueno\"; el 20%, como \"regular\"; y el resto, como \"malo\".\n• Los estudiantes que han contratado los servicios de tutorías individuales han pagado un promedio de 37 soles por hora.\n\nEn base a la información proporcionada, complete:\nLa población de estudio es: ___________\nLa muestra es: ___________\nLa unidad elemental es: ___________\nIdentifique una variable cuantitativa continua: ___________\nIdentifique una variable cuantitativa discreta: ___________\nIdentifique una variable cualitativa nominal: ___________\nIdentifique una variable cualitativa ordinal: ___________\nUn ejemplo de estadístico es: ___________",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-5.jpeg"],
         "tabla": null,
         "grafico": null
       },
       {
         "estudianteId": 6,
-        "numero": 3,
-        "enunciado": "Grafica el histograma de frecuencias relativas para los datos de horas de estudio.",
-        "desarrollo": "Para el histograma de frecuencias relativas, utilizamos los valores calculados en la tabla de distribución. Las frecuencias relativas (hi) representan la proporción de cada valor respecto al total de observaciones. El histograma nos permite visualizar la distribución de los datos y observar que la mayor concentración se encuentra en 3-4 horas de estudio diario.",
-        "imagenes": [],
-        "tabla": null,
-        "grafico": {
-          "tipo": "bar",
-          "titulo": "Histograma de Frecuencias Relativas",
-          "labels": ["2 hrs", "3 hrs", "4 hrs", "5 hrs", "6 hrs"],
-          "datasets": [
-            {
-              "label": "Frecuencia relativa (hi)",
-              "data": [0.167, 0.300, 0.267, 0.167, 0.100],
-              "backgroundColor": "rgba(93, 92, 88, 0.75)",
-              "borderColor": "#5e5d59",
-              "borderWidth": 1
-            }
+        "numero": 6,
+        "enunciado": "Una universidad del departamento de Piura desea analizar el uso de plataformas de aprendizaje virtual entre sus estudiantes de primer ciclo. Para ello, durante el semestre académico se realizó una encuesta a 120 estudiantes seleccionados aleatoriamente de un total de 850 estudiantes matriculados en primer ciclo. Los principales resultados del estudio fueron los siguientes:\n• El 55% de los estudiantes encuestados son mujeres y el 45% hombres.\n• La edad promedio de los estudiantes es 19.8 años.\n• Los estudiantes utilizan en promedio 3.6 horas semanales las plataformas virtuales.\n• El nivel de satisfacción con la plataforma virtual fue calificado como: 40% Muy satisfecho, 35% Satisfecho, 15% Regular y 10% Insatisfecho.\n• El número promedio de cursos virtuales matriculados es 4 cursos por semestre.\n\na. Identifique los elementos del estudio:\nPoblación: ___________\nMuestra: ___________\nUnidad elemental: ___________\n\nb. Clasifique las variables del estudio:",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-6.jpeg"],
+        "tabla": {
+          "encabezados": ["Variable", "Según naturaleza", "Escala de medición"],
+          "filas": [
+            ["Sexo", "", ""],
+            ["Edad", "", ""],
+            ["Horas semanales de uso de plataformas virtuales", "", ""],
+            ["Nivel de satisfacción con la plataforma", "", ""],
+            ["Número de cursos virtuales matriculados", "", ""]
           ]
-        }
+        },
+        "grafico": null
+      },
+      {
+        "estudianteId": 1,
+        "numero": 7,
+        "enunciado": "Una empresa de alimentos está realizando un estudio de mercado sobre las preferencias de consumo de cereales entre adultos jóvenes en el distrito de Lurín. Se encuestaron a 900 personas de 18 a 30 años, obteniendo los siguientes resultados:\n• El 60% prefiere cereales sin azúcar añadida, el 30% prefiere los cereales con poca azúcar y el 10% los prefieren muy dulces.\n• El 20% de los consumidores compra cereales integrales, el 50% compran cereales comunes y el 30% cereales con sabor a chocolate.\n• La edad promedio de los consumidores es de 27 años.\n• El 40% de los consumidores compra cereales en supermercados, el 30% en tiendas de conveniencia y el resto en mercados locales.\n• El 20% de los consumidores son solteros y el resto son casados.\n\na. Identifique los elementos del estudio:\nPoblación: ___________\nMuestra: ___________\nUnidad elemental: ___________\n\nb. Clasifique las variables del estudio:",
+        "desarrollo": "",
+        "imagenes": ["imgs/semanas/semana01/ficha/respuesta-7.jpeg"],
+        "tabla": {
+          "encabezados": ["Variable", "Según naturaleza", "Escala de medición"],
+          "filas": [
+            ["Preferencia de dulzor en cereales", "", ""],
+            ["Tipo de cereal preferido", "", ""],
+            ["Edad del consumidor", "", ""],
+            ["Lugar de compra de cereales", "", ""],
+            ["Estado civil", "", ""]
+          ]
+        },
+        "grafico": null
       }
     ]
   },
