@@ -236,7 +236,7 @@
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-2.jpeg"],
         "preguntas": "a. Construya la tabla de distribución de frecuencias adecuada y coloque el título apropiado.\nb. Realice la siguiente interpretación F₂ y h₃%.\nc. Dibuje el gráfico más adecuado para esta variable (gráfico de bastones o barras).\nd. ¿Qué porcentaje de estudiantes que trabajan llevan cuatro cursos durante el ciclo 2023-2?\ne. ¿Cuántos estudiantes que trabajan llevan como mínimo seis cursos durante el ciclo 2023-2?\nf. ¿Cuántos estudiantes que trabajan llevan a lo más cinco cursos durante el ciclo 2023-2?",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana02/ficha/respuesta-2.jpeg"],
+        "imagenes": ["imgs/semanas/semana02/ficha/respuesta-2-1.jpeg", "imgs/semanas/semana02/ficha/respuesta-2-2.jpeg"],
         "tabla": null,
         "grafico": null
       },
@@ -280,7 +280,7 @@
         "imagenesEnunciado": ["imgs/semanas/semana02/ficha/enunciados/enunciado-6.jpeg"],
         "preguntas": "Se solicita:\na. Organiza los datos en una tabla de frecuencias utilizando la regla de Sturges.\nb. Interpreta las siguientes frecuencias: F₂ y H₃%.\nc. Si se considera un puntaje mínimo de 13 como indicador de ansiedad significativa, ¿qué porcentaje de adolescentes presenta esta condición?\nd. Si se desea identificar al 25% de los adolescentes con los niveles de ansiedad más bajos para un estudio de factores protectores, ¿hasta qué puntaje se incluirían en este grupo?\ne. Si se define un rango de ansiedad \"leve\" con un puntaje mínimo de 7 pero menos de 17, ¿qué porcentaje de adolescentes se encuentra en este rango?",
         "desarrollo": "",
-        "imagenes": ["imgs/semanas/semana02/ficha/respuesta-6.jpeg"],
+        "imagenes": ["imgs/semanas/semana02/ficha/respuesta-6-1.jpeg", "imgs/semanas/semana02/ficha/respuesta-6-2.jpeg"],
         "tabla": null,
         "grafico": null
       },
