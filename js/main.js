@@ -256,6 +256,9 @@ function buildPost(item, tipo) {
 
   if (preguntas) inner += `<div class="post-enunciado post-preguntas">${preguntas}</div>`;
 
+  const hasAnswer = (item.desarrollo && item.desarrollo.trim()) || item.tabla || (item.imagenes && item.imagenes.length > 0) || item.grafico;
+  if (hasAnswer) inner += `<div class="post-respuesta-label">Respuesta:</div>`;
+
   inner += `<div class="post-desarrollo">${item.desarrollo}</div>`;
 
   // Table (before answer images)
@@ -452,12 +455,12 @@ document.addEventListener('DOMContentLoaded', async () => {
    FALLBACK DATA (used when page is opened via file://)
    ============================================================ */
 const FALLBACK_STUDENTS = [
-  { id:1, nombre:'Angel Vargas',   foto:'imgs/profiles/estudiante-1.svg', bio:'Estudiante apasionado por el análisis de datos y la toma de decisiones basada en evidencia. Encuentra en la estadística una herramienta clave para entender el mundo que nos rodea.' },
-  { id:2, nombre:'Keyla Mendoza',  foto:'imgs/profiles/estudiante-2.svg', bio:'Curiosa por naturaleza, disfruta resolver problemas aplicando métodos estadísticos. Cree que detrás de cada dato hay una historia esperando ser contada.' },
-  { id:3, nombre:'Leonardo Abanto',foto:'imgs/profiles/estudiante-3.svg', bio:'Le apasiona la intersección entre la estadística y las ciencias sociales. Busca convertir los números en narrativas comprensibles para todos.' },
-  { id:4, nombre:'Laryel Negron',  foto:'imgs/profiles/estudiante-4.svg', bio:'Orientado al detalle y al rigor metodológico. Para él, la estadística es el lenguaje preciso con el que la realidad puede ser descrita y cuestionada.' },
-  { id:5, nombre:'Hideki Fukuhara',foto:'imgs/profiles/estudiante-5.svg', bio:'Comprometido con aprender y compartir conocimiento. Valora el trabajo en equipo y la diversidad de perspectivas que cada compañero aporta al grupo.' },
-  { id:6, nombre:'Manuel Salas',   foto:'imgs/profiles/estudiante-6.svg', bio:'Estudiante con interés en la estadística aplicada a los negocios. Usa los datos como puente entre la teoría académica y las decisiones del mundo real.' },
+  { id:1, nombre:'Angel Vargas',   foto:'imgs/profiles/Angel_Vargas_Recortado.jpeg',    bio:'Soy estudiante de Ingeniería Empresarial y de Sistemas. Soy curioso por naturaleza y suelo dedicar gran parte de mi tiempo a la investigación de herramientas tecnológicas.' },
+  { id:2, nombre:'Keyla Mendoza',  foto:'imgs/profiles/Keyla_Mendoza_Recortado.jpeg',   bio:'Soy estudiante de Marketing y Administración me considero una persona responsable y tranquila, que siempre trata de dar lo mejor de sí. Me gusta aprender, escuchar a los demás y mejorar poco a poco en lo que hago. También valoro el trabajo en equipo y busco aportar de manera positiva en todo lo que participo.' },
+  { id:3, nombre:'Leonardo Abanto',foto:'imgs/profiles/Leonardo_Abanto_Recortado.jpeg', bio:'Comprometido con aprender y compartir conocimiento. Valora el trabajo en equipo y la diversidad de perspectivas que cada compañero aporta al grupo.' },
+  { id:4, nombre:'Laryel Negron',  foto:'imgs/profiles/estudiante-4.svg',               bio:'Orientado al detalle y al rigor metodológico. Para él, la estadística es el lenguaje preciso con el que la realidad puede ser descrita y cuestionada.' },
+  { id:5, nombre:'Hideki Fukuhara',foto:'imgs/profiles/Hideki_Fukuhara_Recortado.jpeg', bio:'Mi nombre es Hideki Fukuhara, tengo 18 años y estudio Ingeniería Enpresarial y de Sistemas. Me apasionan las matemáticas y aprender cosas nuevas 👍.' },
+  { id:6, nombre:'Manuel Salas',   foto:'imgs/profiles/Manuel_Salas_Recortado.jpeg',    bio:'Estudiante con interés en la estadística aplicada a los negocios. Usa los datos como puente entre la teoría académica y las decisiones del mundo real.' },
 ];
 
 const FALLBACK_SEMANAS = [

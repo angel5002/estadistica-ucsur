@@ -643,6 +643,18 @@ h1, h2, h3, h4 {
   margin-top: 12px;
 }
 
+.post-respuesta-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-top: 16px;
+  border-top: 1px solid var(--warm-sand);
+}
+
 /* Tables */
 .post-table-wrap {
   margin-top: 20px;
