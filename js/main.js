@@ -256,15 +256,15 @@ function buildPost(item, tipo) {
 
   if (preguntas) inner += `<div class="post-enunciado post-preguntas">${preguntas}</div>`;
 
-  const hasAnswer = (item.desarrollo && item.desarrollo.trim()) || item.tabla || (item.imagenes && item.imagenes.length > 0) || item.grafico;
-  if (hasAnswer) inner += `<div class="post-respuesta-label">Respuesta:</div>`;
-
-  inner += `<div class="post-desarrollo">${item.desarrollo}</div>`;
-
-  // Table (before answer images)
+  // Table is part of the enunciado (student fills it in), shown before the Respuesta label
   if (item.tabla) {
     inner += buildTable(item.tabla);
   }
+
+  const hasAnswer = (item.desarrollo && item.desarrollo.trim()) || (item.imagenes && item.imagenes.length > 0) || item.grafico;
+  if (hasAnswer) inner += `<div class="post-respuesta-label">Respuesta:</div>`;
+
+  inner += `<div class="post-desarrollo">${item.desarrollo}</div>`;
 
   // Answer images
   if (item.imagenes && item.imagenes.length > 0) {
